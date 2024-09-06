@@ -16,4 +16,4 @@ mkdir -p ~/.local/bin/
 cat <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/startdesktop) > ~/.local/bin/startdesktop;
 chmod +x ~/.local/bin/startdesktop; 
 proot-distro install debian
-proot-distro login --user root --shared-tmp debian;
+proot-distro login --user root --shared-tmp debian -- bash <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/setup2.sh)

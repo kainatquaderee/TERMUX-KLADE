@@ -1,4 +1,5 @@
 #!/bin/bash
+source <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/depends.sh)
 echo KLADE FOR TERMUX
 ......
 sleep 1

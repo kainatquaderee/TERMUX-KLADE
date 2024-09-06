@@ -9,6 +9,7 @@ echo .....................
 sleep 1
 echo ..................................
 pkg install x11-repo
+pkg update,
 pkg install $depends;
 echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc;
 mkdir -p ~/.local/bin/

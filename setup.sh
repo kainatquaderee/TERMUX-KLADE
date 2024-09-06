@@ -8,6 +8,7 @@ sleep 1
 .....................
 sleep 1
 ..................................
+pkg install x11-repo
 pkg install $depends;
 echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc;
 cat <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/startdesktop) > ~/.local/bin/startdesktop;

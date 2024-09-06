@@ -9,6 +9,8 @@ sleep 1
 sleep 1
 ..................................
 pkg install $depends;
+echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc;
+cat <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/startdesktop) > ~/.local/bin/startdesktop;
 proot-distro install debian
 proot-distro login --user root --shared-tmp debian;
 apt update && apt upgrade 

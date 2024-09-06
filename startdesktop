@@ -7,4 +7,4 @@ sleep 1
 echo __________________
 sleep 1
 echo _____________________________
-proot-distro login --user user --shared-tmp debian -- bash "termux-x11 :1 -xstartup "startKLADE""
+proot-distro login --user user --shared-tmp debian -- bash -c "termux-x11 :1 -xstartup "startKLADE""

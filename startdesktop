@@ -1,0 +1,10 @@
+#!/bin/bash
+echo startin desktop.
+echo _____
+sleep 1
+echo __________
+sleep 1
+echo __________________
+sleep 1
+echo _____________________________
+proot-distro login --user user --shared-tmp debian -- bash "termux-x11 :1 -xstartup "startKLADE""

@@ -11,6 +11,7 @@ echo ..................................
 pkg install x11-repo
 pkg install $depends;
 echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc;
+mkdir -p ~/.local/bin/
 cat <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/startdesktop) > ~/.local/bin/startdesktop;
 chmod +x ~/.local/bin/startdesktop; 
 proot-distro install debian

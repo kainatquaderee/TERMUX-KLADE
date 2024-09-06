@@ -11,4 +11,4 @@ passwd;
 echo "password for user";
 passwd user;
 echo "user  ALL=(ALL:ALL) ALL" >> /etc/sudoers;
-sudo -u user <(curl -s https://raw.githubusercontent.com/kainatquaderee/KLADE/main/install.sh)
+su  user -- bash <(curl -s https://raw.githubusercontent.com/kainatquaderee/KLADE/main/install.sh)

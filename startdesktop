@@ -1,5 +1,3 @@
-rm -rf $TMPDIR
-mkdir -p $TMPDIR
 killall -9 termux-x11 Xwayland pulseaudio virgl_test_server_android termux-wake-lock
 
 echo starting desktop

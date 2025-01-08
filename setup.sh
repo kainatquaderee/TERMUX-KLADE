@@ -14,6 +14,7 @@ pkg install $depends;
 echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc;
 mkdir -p ~/.local/bin/
 cat <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/startdesktop) > ~/.local/bin/startdesktop;
+cat <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/refs/heads/main/reset-TMP) > ~/.local/bin/reset-TMP;
 chmod +x ~/.local/bin/startdesktop; 
 proot-distro install debian
 proot-distro login --user root --shared-tmp debian -- bash <(curl -s https://raw.githubusercontent.com/kainatquaderee/TERMUX-KLADE/main/setup2.sh)
